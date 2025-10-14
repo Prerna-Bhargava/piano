@@ -18,7 +18,7 @@ const PianoTilesGame = () => {
   // Initialize audio
   useEffect(() => {
     audioContextRef.current = new (window.AudioContext || window.webkitAudioContext)();
-    const audio = new Audio("/sounds/gameover.mp3"); // Put your file in public/sounds/
+    const audio = new Audio(`${process.env.PUBLIC_URL}/sounds/gameover.mp3`);; // Put your file in public/sounds/
     audio.volume = 0.5;
     gameOverSoundRef.current = audio;
 
@@ -35,7 +35,7 @@ const PianoTilesGame = () => {
   useEffect(() => {
     if (gameStarted && !gameOver) {
       if (!bgMusicRef.current) {
-        const audio = new Audio("/sounds/piano-sound.mp3"); // Path relative to public folder
+        const audio = new Audio(`${process.env.PUBLIC_URL}/sounds/piano-sound.mp3`);; // Path relative to public folder
         audio.loop = true;
         audio.volume = 0.3;
         audio.play().catch((e) => console.log("Autoplay blocked:", e));
