@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/piano/static/css/main.e6c13ad2.css",
+    "main.js": "/piano/static/js/main.bf35ed35.js",
+    "static/js/453.b2b36460.chunk.js": "/piano/static/js/453.b2b36460.chunk.js",
+    "index.html": "/piano/index.html",
+    "main.e6c13ad2.css.map": "/piano/static/css/main.e6c13ad2.css.map",
+    "main.bf35ed35.js.map": "/piano/static/js/main.bf35ed35.js.map",
+    "453.b2b36460.chunk.js.map": "/piano/static/js/453.b2b36460.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.bf35ed35.js"
+  ]
+}
