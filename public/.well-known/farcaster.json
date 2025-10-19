@@ -1,0 +1,22 @@
+{
+  "frame": {
+    "version": "1",
+    "name": "Color Bomb",
+    "iconUrl": "https://prerna-bhargava.github.io/icon.png",
+    "homeUrl": "https://prerna-bhargava.github.io/",
+    "splashImageUrl": "https://prerna-bhargava.github.io/splash.png",
+    "splashBackgroundColor": "#111111",
+    "subtitle": "Tap the right colors and avoid bombs!",
+    "description": "Challenge your reflexes in this fast-paced color game. Tap the correct tiles to score points, earn combos, and avoid black bombs!",
+    "primaryCategory": "game",
+    "tags": ["game", "fun", "color", "reflex","piano"],
+    "ogImageUrl": "https://prerna-bhargava.github.io/og.png",
+    "tagline": "Test your reflexes and color sense!",
+    "buttonTitle": "Play Now"
+  },
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  }
+}

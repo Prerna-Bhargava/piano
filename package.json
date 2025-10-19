@@ -1,9 +1,10 @@
 {
+  "homepage": "https://prerna-bhargava.github.io/piano",
   "name": "piano-tiles",
-  "homepage": "https://prerna-bhargava.github.io/piano-tiles",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@farcaster/miniapp-sdk": "^0.2.1",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.0",
@@ -16,12 +17,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

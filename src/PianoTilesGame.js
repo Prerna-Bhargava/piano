@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Music, RotateCcw, Trophy } from "lucide-react";
+import { sdk } from "@farcaster/miniapp-sdk";
 
 const PianoTilesGame = () => {
   const [rows, setRows] = useState([]);
@@ -21,10 +22,17 @@ const PianoTilesGame = () => {
     const audio = new Audio(`${process.env.PUBLIC_URL}/sounds/gameover.mp3`);; // Put your file in public/sounds/
     audio.volume = 0.5;
     gameOverSoundRef.current = audio;
-
+    (async () => {
+      try {
+        await sdk.actions.ready();
+      } catch (err) {
+        console.error("Farcaster ready error:", err);
+      }
+    })();
     return () => {
       if (audioContextRef.current) audioContextRef.current.close();
     };
+    
   }, []);
 
   // 1️⃣ Add a ref for background music
